@@ -51,7 +51,7 @@ namespace LPR2
             }
             else
             {
-                delta = Math.Pow(b, 2 - 4 * a * c);
+                delta = Math.Pow(b, 2) - 4 * a * c;
                 if (delta < 0)
                 {
                     MessageBox.Show("Delta não pode ser menor que 0! ");
@@ -62,9 +62,9 @@ namespace LPR2
                 }
                 else
                 {
-                    baskara = -b + Math.Sqrt(delta) / (2 * a);
+                    baskara = (-b + Math.Sqrt(delta)) / (2 * a);
                     label5.Text = Convert.ToString(baskara);
-                    baskara = -b - Math.Sqrt(delta) / (2 * a);
+                    baskara = (-b - Math.Sqrt(delta)) / (2 * a);
                     label6.Text = Convert.ToString(baskara);
                 }
             }

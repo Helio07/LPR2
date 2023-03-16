@@ -38,6 +38,8 @@
             button1 = new Button();
             label5 = new Label();
             label6 = new Label();
+            label7 = new Label();
+            label8 = new Label();
             SuspendLayout();
             // 
             // label1
@@ -117,27 +119,46 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(333, 261);
+            label5.Location = new Point(349, 263);
             label5.Name = "label5";
-            label5.Size = new Size(38, 15);
+            label5.Size = new Size(31, 15);
             label5.TabIndex = 8;
-            label5.Text = "label5";
+            label5.Text = "        ";
             label5.Click += label5_Click;
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(399, 261);
+            label6.Location = new Point(421, 263);
             label6.Name = "label6";
-            label6.Size = new Size(38, 15);
+            label6.Size = new Size(0, 15);
             label6.TabIndex = 9;
-            label6.Text = "label6";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(326, 261);
+            label7.Name = "label7";
+            label7.Size = new Size(24, 15);
+            label7.TabIndex = 10;
+            label7.Text = "1°: ";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(402, 261);
+            label8.Name = "label8";
+            label8.Size = new Size(24, 15);
+            label8.TabIndex = 11;
+            label8.Text = "2°: ";
             // 
             // Form5
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label8);
+            Controls.Add(label7);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(button1);
@@ -167,5 +188,7 @@
         private Button button1;
         private Label label5;
         private Label label6;
+        private Label label7;
+        private Label label8;
     }
 }
